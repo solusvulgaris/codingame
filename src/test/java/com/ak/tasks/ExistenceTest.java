@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 public class ExistenceTest {
 
-    public static Stream<org.junit.jupiter.params.provider.Arguments> testData() {
+    public static Stream<Arguments> testData() {
         return Stream.of(
                 Arguments.of(new int[]{-9, 14, 37, 102}, 102, true, "Value exists."),
                 Arguments.of(new int[]{1, -28, 88, 200, 7}, 36, false, "Value does not exist.")
