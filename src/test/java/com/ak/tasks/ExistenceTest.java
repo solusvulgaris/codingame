@@ -19,14 +19,14 @@ public class ExistenceTest {
 
     @ParameterizedTest
     @MethodSource("testData")
-    @DisplayName("Existence test")
+    @DisplayName("Existence test for for loop implementation")
     void existenceForImplementationTest(int[] ints, int value, boolean exists, String description) {
         Assertions.assertEquals(exists, Existence.existsForImplementation(ints, value), description);
     }
 
     @ParameterizedTest
     @MethodSource("testData")
-    @DisplayName("Existence test")
+    @DisplayName("Existence test for stream implementation")
     void existenceStreamImplementationTest(int[] ints, int value, boolean exists, String description) {
         Assertions.assertEquals(exists, Existence.existsStreamImplementation(ints, value), description);
     }
