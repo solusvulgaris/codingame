@@ -13,16 +13,25 @@ class PatternTest {
     public static Stream<Arguments> patternTestData() {
         return Stream.of(
                 Arguments.of(3, 5, ""),
-                Arguments.of(4, 4, "1"),
-                Arguments.of(5, 0, "1"),
-                Arguments.of(5, 1, "5"),
-                Arguments.of(8, 1, "8"),
-                Arguments.of(30, 30, "1"),
-                Arguments.of(7, 6, "7"),
-                Arguments.of(47, 46, "47")
-            //    Arguments.of(4, 2, "6"),
-            //    Arguments.of(5, 4, "5"),
-            //    Arguments.of(67, 34, "14226520737620288370")
+                Arguments.of(4, 4, "1.0"),
+                Arguments.of(5, 0, "1.0"),
+                Arguments.of(5, 1, "5.0"),
+                Arguments.of(8, 1, "8.0"),
+                Arguments.of(30, 30, "1.0"),
+                Arguments.of(7, 6, "7.0"),
+                Arguments.of(47, 46, "47.0"),
+                Arguments.of(4, 2, "6.0"),
+                Arguments.of(6, 2, "15.0"),
+                Arguments.of(4, 3, "4.0"),
+                Arguments.of(5, 3, "10.0"),
+                Arguments.of(6, 3, "20.0"),
+                Arguments.of(7, 3, "35.0"),
+                Arguments.of(5, 4, "5.0"),
+                Arguments.of(6, 4, "15.0"),
+                Arguments.of(8, 5, "56.0"),
+                Arguments.of(8, 6, "28.0"),
+                Arguments.of(9, 4, "126.0")
+                //Arguments.of(67, 34, "14226520737620288370")
         );
     }
 
